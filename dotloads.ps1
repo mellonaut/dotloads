@@ -13,8 +13,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # variant
 # powershell -exec bypass -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://raw.githubusercontent.com/mellonaut/sysmon/main/onboard_sysmon.ps1')|iex"
 
-# # Way to get creds and export as global var
+# Way to get creds and export as global var
 # $creds = Get-Credential
 # Path\to\script.ps1
-
 # Inside script.ps1, something like start-process calc -credential $global:creds
