@@ -1,7 +1,7 @@
 # Get admin creds via UAC popup
 Set-ExecutionPolicy Bypass -Scope Process -Force; Get-Credential
 
-# Download and execute Sysmon installation script with custom configuration
+# Download and execute New Hire installation script with custom Sysmon configuration
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/mellonaut/NewHire/blob/main/newhire.ps1'))
 
 # Download and execute Chocolatey installation script
